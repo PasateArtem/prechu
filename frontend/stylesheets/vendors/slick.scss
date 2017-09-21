@@ -14,11 +14,7 @@
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
-.slick-slide img {
-    display: block;
-    min-width: 100%;
-    height: auto;
-}
+
 .slick-list {
     position: relative;
     overflow: hidden;
@@ -74,7 +70,10 @@
         float: right;
     }
     img {
-        display: block;
+        // display: block;
+        
+        // min-width: 100%;
+        // height: auto;
     }
     &.slick-loading img {
         display: none;

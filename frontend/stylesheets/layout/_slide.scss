@@ -1,0 +1,116 @@
+.pagination{
+	.prev{
+		position: absolute;
+		left: 100px;
+		top: 300px;
+		cursor: pointer;
+	}
+	.next{
+		position: absolute;
+		right: 100px;
+		top: 300px;
+		cursor: pointer;
+	}
+}
+.grip_line{
+	background: url(../img/grip.png) repeat-x;
+	height: 9px;
+    /* margin-top: 9px; */
+    position: relative;
+    top: -8px;
+}
+.slider{
+	.img__holder-slide{
+        width: 100%;
+        height: auto;
+		img{
+			display: block;
+            min-width: 100%!important;
+            height:auto; 
+		}
+	}
+	.sl__slide{
+	    position: relative;
+	    
+	    .main-slide{
+	        position: absolute;
+	        top: 0px;
+	        width: 100%;
+	        padding-top: 50px;
+	        .container{
+	        	display: flex;
+	        	justify-content: space-between;
+	        	width: 100%;
+                max-width: 975px;
+                margin: 0 auto;
+                padding: 0 45px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                background: 0 0;
+                .internal__block-img{
+		            max-width: 100%;
+		            .iphone{
+			            max-width: 100%;
+			            height: auto;
+		            }
+	            }
+	            .internal__block-content{
+	            	padding-top: 122px;
+	            	h1{
+	            		font-size: 42px;
+	            		color: #fff;
+	            		font-family: 'Conv_SegoeWP-Light';
+	            		padding-bottom: 20px;
+	            	}
+	            	p{
+	            		font-size: 26px;
+	            		color: #fff;
+	            		font-family: 'Conv_SegoeWP-Light';
+	            		width: 240px;
+
+	            	}
+	            	.button{
+	            		padding-top: 60px;
+	            		padding-left: 20px;
+	            		a{
+	            			display: flex;
+	        	            padding: 6px 10px 6px 10px;
+                            background: #5094f2;
+                            width: 147px;
+	        	            .ok{
+	        	            	max-width: 100% !important;
+	        	            	height: auto;
+	        	            }
+	        	            p{
+                                font-size: 22px;
+                                color: #fff;
+                                font-family: 'Conv_SegoeWP-Light';
+                                margin-left: 5px;
+	        	            }
+	            		}
+	            	}
+	            }
+            } 
+        }
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 100px){
+    .pagination{
+    	display: none;
+    }
+        
+        .slider{
+        	.sl__slide{
+        		.main-slide{
+        			.container{
+        				.internal__block-content{
+    	                    h1{
+    	                    	font-size: 60px;
+    	                    }
+        			}
+        		}
+        	}
+        }
+        
+    }
+}
