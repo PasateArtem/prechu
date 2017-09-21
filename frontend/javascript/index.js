@@ -8,7 +8,7 @@ requirejs.config({
 });
 
 requirejs([
-    'domReady'
+    'domReady',
 	'jquery',
 	'jquery-ui',
 	'slick'
