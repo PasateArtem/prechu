@@ -82,6 +82,10 @@
 	        		justify-content: space-between;
 	        		.block-img{
 	        			margin-top: 23px;
+                        img{
+                            max-width: 100%;
+                            height: auto;
+                        }
 	        		}
 
 	        		.block-title{
@@ -103,4 +107,150 @@
 	        }
         }
 	}	
+}
+@media screen and (max-width: 768px) and (min-width: 100px){
+    .main{
+        .layout{
+            .layout-content{
+                .gallery-product{
+                    padding-top: 0px;
+                    .container{
+                        padding: 0px 0px;
+                    }
+                     .product__price{
+                        display: flex;
+                        flex-direction: column;
+                        .product__price-item {
+                            flex-direction: row;
+                            justify-content: space-around;
+                            align-items: flex-start;
+                            border-bottom: 1px solid #e5e5e5;
+                                padding: 35px 0px 20px 0px;
+                            #blue,
+                            #red,
+                            #yellow{
+                                width: 150px;
+                                height: 150px;
+                            }
+                            .item-title{
+                                h3,
+                                p{
+                                    text-align: left;
+                                }
+                                h3{
+                                    font-size: 29px;
+                                }
+                                p{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                     }
+                }
+                .block-services{
+                    text-align: center;
+                    .services-main{
+                        flex-direction: column;
+                        padding: 0px 30px 0px 30px;
+                        .block-title{
+                            text-align: left;
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }        
+}
+@media screen and (max-width: 500px) and (min-width: 100px){
+    .main{
+        .layout{
+            .layout-content{
+                .gallery-product{
+                     .container{
+                        .product__price{
+                            .product__price-item{
+                                #blue,
+                                #red,
+                                #yellow{
+                                    width: 130px;
+                                    height: 130px;
+                                }
+                                .item-title{
+                                    h3{
+                                        font-size: 22px
+                                    }
+                                    p{
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                     }
+                }
+                .block-services{
+                    .services-main{
+                        .block-title{
+                            text-align: left;
+                            h2{
+                                font-size: 22px;
+                            }
+                            p{
+                                font-size: 9px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }           
+}
+@media screen and (max-width: 400px) and (min-width: 100px){
+    .main{
+        .layout{
+            .layout-content{
+                .gallery-product{
+                     .container{
+                        .product__price{
+                            .product__price-item{
+                                #blue,
+                                #red,
+                                #yellow{
+                                    width: 130px;
+                                    height: 130px;
+                                }
+                                .item-title{
+                                    h3{
+                                        font-size: 16px
+                                    }
+                                    p{
+                                        font-size: 9px;
+                                    }
+                                }
+                            }
+                        }
+                     }
+                }
+                .block-services{
+                    h1{
+                        font-size: 30px;
+                    }
+                    .services-main{
+                        padding: 0px;
+                        .block-title{
+                            text-align: left;
+                            h2{
+                                font-size: 17px;
+                            }
+                            p{
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }          
 }
